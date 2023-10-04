@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QQeWi</title>
+    <link rel="stylesheet" href="style.css">
+    <link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-screen page">
+        <video src="video/cosmos.webm" autoplay muted loop></video>
+        <header class="header">
+            <div class="container-header">
+                <nav class="main-menu">
+                    <ul>
+                        <li>QQeWi</li>
+                        <li><a href="index.html">На главную</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="background-black-07 text-color div-main container">
+                <section>
+                    <div class="form-container">
+                        <h1>Форма обратной связи</h1>
+                        <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                            <div>
+                                <label for="fio">ФИО:</label>
+                                <input type="text" id="fio" name="fio" placeholder="имя фамилия отчество" required>
+                            </div>
+
+                            <div class="text-top">
+                                <label for="email">E-mail:</label>
+                                <input type="text" id="email" name="email" placeholder="почта" required>
+                            </div>
+
+                            <fieldset>
+                                <legend>как вы узнали о мне ?</legend>
+                                <div>
+                                    <input type="radio" name="source" id="friend" value="friends">
+                                    <label for="friend">Друзья</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="source" id="advertising" value="fieldsets">
+                                    <label for="advertising">Реклама</label>
+                                </div>
+                            </fieldset>
+
+                            <div>
+                                <label for=""></label>
+                                <select name="msg_type" id="msg_type">
+                                    <option value="1">Жалоба</option>
+                                    <option value="2">Предложение</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="massage"></label>
+                                <textarea name="" id="massage" placeholder="Введите текст сообщения"></textarea>
+                            </div>
+
+                            <div>
+                                <labale for="file">Вложение</labale>
+                                <input type="file" name="file" id="file" multiple>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="agree" id="agree" value="">
+                                <label for="agree">Даю согласие на обработку пер. данных</label>
+                            </div>
+
+
+                            <button class="btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class=" background-black">
+            <div class="footer-container text-color">
+                <div>
+                    &copy; Кирияк Юрий Анатольевич 2023 <br>
+                    Email: <a class="btn-white" href="mailto:best.iurik@gmail.com">best.iurik@gmail.com</a> <br>
+                </div>
+                <div>
+                    мои соц. сети:
+                    <a class="btn btn-white" href="mailto:best.iurik@gmail.com" target="_blank">почта</a>
+                    <a class="btn btn-white" href="https://vk.com/id230179561" target="_blank">VK</a>
+                    <a class="btn btn-white" href="https://steamcommunity.com/id/bestiurii/" target="_blank">steam</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
