@@ -1,0 +1,10 @@
+@media print {
+    .full-screen video, .header, footer {
+      display: none;
+    }
+  
+    .content {
+      page-break-inside: avoid;
+    }
+  }
+  
