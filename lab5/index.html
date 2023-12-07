@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>QQeWi</title>
-    <link rel="stylesheet" href="/lab5/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats facts</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="full-screen page">
-        <video src="/file_web/video/cosmos.webm" autoplay muted loop></video>
-        <header class="header header-background">
-            <div class="container-header">
-                <div>
-                    <nav class="main-menu">
-                        <ul>
-                            <li>QQeWi</li>
-                            <li><a href="/index.html">Лабы</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <img class="avatar" src="/file_web/images/default/avatar.png" alt="avatar">
+    <header class="header">
+        <nav>
+            <img class="logo" src="images/cat_white.png">
+            <div class="title">Facts about cats</div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search-form">
+                <input type="text" class="search-field">
+                <button class="search-btn">Найти</button>
+                <ul class="autocomplete-suggestions"></ul>
+            </div>
+                       
+            <div class="pagination-info">
+                <span>
+                    Показывать по
+                    <select name="per-page" class="per-page-btn">
+                        <option>5</option>
+                        <option selected>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>100</option>
+                    </select>
+                    записей на странице
+                </span>
+                <span class="current-interval-info">
+                    Показаны записи с <span class="current-interval-start">1</span> по <span class="current-interval-end">10</span> из <span class="total-count">190</span>
+                </span>
+            </div>
+            <div class="facts-list" data-url="http://cat-facts-api.std-900.ist.mospolytech.ru/facts">
+                <div class="facts-list-item">
+                    <div class="item-content">
+                        Scottish sailer Alexander Selkirk once survived for 4 years on a deserted island thanks to feral cats that protected him
+                        from large rats during the night.
+                    </div>
+                    <div class="item-footer">
+                        <div class="author-name">
+                            Alex Wohlbruck
+                        </div>
+                        <div class="upvotes">
+                            4
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+            <div class="pagination">
+                <!-- <button class="btn first-page-btn" data-page="1">Первая страница</button>
+                <div class="pages-btn">
+                    <button class="btn active" data-page="1">1</button>
+                    <button class="btn" data-page="2">2</button>
+                    <button class="btn" data-page="3">3</button>
+                </div>
+                <button class="btn last-page-btn">Последняя страница</button> -->
+            </div>
+        </div>
+    </main>
 
-        <main>
-            <div class="background-black-07 text-color div-main container">
-            </div>
-        </main>
-        <footer class="background-black-07">
-            <div class="footer-container text-color">
-                <div>
-                    &copy; 2023 Кирияк Юрий Анатольевич<br>
-                    Email: <a class="btn-white" href="mailto:best.iurik@gmail.com">best.iurik@gmail.com</a> <br>
-                </div>
-                <div>
-                    мои соц. сети:
-                    <a class="btn btn-white" href="mailto:best.iurik@gmail.com" target="_blank">почта</a>
-                    <a class="btn btn-white" href="https://vk.com/id230179561" target="_blank">VK</a>
-                    <a class="btn btn-white" href="https://steamcommunity.com/id/bestiurii/" target="_blank">steam</a>
-                </div>
-            </div>
-        </footer>
-    </div>
-
+    <script src="main.js" defer></script>
 </body>
-
 </html>
