@@ -1,0 +1,17 @@
+header, footer, section {
+    padding: 100px 0;
+}
+
+
+.avatar {
+    border: 10px;
+    border-radius: 50%;
+}
+
+.indentation {
+    margin-top: 30px;
+}
+
+.hero-height {
+    min-height: 90vh;
+}
