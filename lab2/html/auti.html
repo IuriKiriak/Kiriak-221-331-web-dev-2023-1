@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>QQeWi</title>
+    <link rel="stylesheet" href="https://iurikiriak.github.io/Kiriak-221-331-web-dev-2023-1/lab2/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-screen page">
+        <video src="https://iurikiriak.github.io/Kiriak-221-331-web-dev-2023-1/file_web/video/cosmos.webm" autoplay
+            muted loop></video>
+        <header class="header">
+            <div class="container-header">
+                <nav class="main-menu">
+                    <ul>
+                        <li>QQeWi</li>
+                        <li><a href="https://iurikiriak.github.io/Kiriak-221-331-web-dev-2023-1/lab2/index.html">На
+                                главную</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <img class="avatar"
+                        src="https://iurikiriak.github.io/Kiriak-221-331-web-dev-2023-1/file_web/images/default/avatar.png"
+                        alt="avatar">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="background-black-07 text-color div-main container">
+                <section>
+                    <div class="form-container">
+                        <h1 class="text-center">Форма обратной связи</h1>
+                        <form class="text-center text-top" method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                            <div>
+                                <label for="login">логин</label><br>
+                                <input type="text" id="login" name="login" placeholder="^_^ NAGIBATOR228 ^_^" required>
+                            </div>
+
+                            <div>
+                                <label for="pass">пароль</label><br>
+                                <input type="password" id="pass" name="password" placeholder="@#$%^&*" required>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="agree" id="checkbox" value="">
+                                <label for="checkbox">запомнить меня</label>
+                            </div>
+
+
+                            <button class="btn text-top" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class=" background-black">
+            <div class="footer-container text-color">
+                <div>
+                    &copy; Кирияк Юрий Анатольевич 2023 <br>
+                    Email: <a class="btn-white" href="mailto:best.iurik@gmail.com">best.iurik@gmail.com</a> <br>
+                </div>
+                <div>
+                    мои соц. сети:
+                    <a class="btn btn-white" href="mailto:best.iurik@gmail.com" target="_blank">почта</a>
+                    <a class="btn btn-white" href="https://vk.com/id230179561" target="_blank">VK</a>
+                    <a class="btn btn-white" href="https://steamcommunity.com/id/bestiurii/" target="_blank">steam</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
